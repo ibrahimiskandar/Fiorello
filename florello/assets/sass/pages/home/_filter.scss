@@ -1,0 +1,40 @@
+#filter {
+  height: 1167px;
+  .filter {
+    ul {
+      position: relative;
+      top: 73px;
+      left: -32px;
+      display: flex;
+      list-style: none;
+      li {
+        padding-left: 32px;
+        a {
+          color: rgb(27, 27, 27);
+          text-decoration: none;
+          font-family: "Montserrat", sans-serif;
+          font-size: 12px;
+          font-weight: 500;
+          height: 22px;
+          letter-spacing: 1.2px;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .cards {
+      position: relative;
+      top: 200px;
+      .card {
+        position: relative;
+        height: 400px;
+        min-width: 100px;
+        width: 295px;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
