@@ -13,8 +13,7 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  row-gap: 40px;
-  gap: 40px;
+  row-gap: 0px;
 }
 
 .col-3 {
@@ -29,22 +28,16 @@
 }
 
 nav {
-  padding: 0px 15.75%;
-}
-
-@media screen and (max-width: 1200px) {
-  nav {
-    padding: 0px 57.3%;
-  }
+  background-color: #724949;
 }
 
 nav .navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -86,6 +79,7 @@ nav .navbar ul {
 
 nav .navbar ul li {
   padding-left: 58px;
+  line-height: 115px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -98,11 +92,11 @@ nav .navbar ul li a {
   color: #1b1b1b;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
   font-weight: 500;
+  font-size: 12px;
   height: 22px;
   letter-spacing: 1.2px;
-  line-height: 115px;
+  text-transform: uppercase;
 }
 
 nav .navbar ul li a span {
@@ -162,6 +156,7 @@ nav .navbar ul .dropdown-content a {
   margin: 19px 0px;
   line-height: 19px;
   opacity: 1;
+  text-transform: none;
 }
 
 nav .navbar ul .dropdown-content a span {
@@ -387,26 +382,74 @@ nav .navbar a .badge:after {
   color: #1b1b1b;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  font-size: 12px;
   font-weight: 500;
+  font-size: 12px;
   height: 22px;
   letter-spacing: 1.2px;
   text-transform: uppercase;
 }
 
+#filter .filter .options li span {
+  color: #1b1b1b;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  height: 22px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 #filter .filter .cards {
   position: relative;
-  top: 200px;
+  top: 104px;
 }
 
 #filter .filter .cards .card {
   position: relative;
-  height: 400px;
-  min-width: 100px;
+  height: 444.6px;
+  min-width: 267px;
   width: 295px;
   overflow: hidden;
+  text-align: center;
+  margin-right: 20px;
 }
 
 #filter .filter .cards .card img {
   width: 100%;
+}
+
+#filter .filter .cards .card h2 {
+  color: #1b1b1b;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  height: 22px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+#filter .filter .cards .card a {
+  color: #1b1b1b;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  height: 22px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+#filter .filter .cards .card span {
+  color: #1b1b1b;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  height: 22px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: #afafaf;
 }

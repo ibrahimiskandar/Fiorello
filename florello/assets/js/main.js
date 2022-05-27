@@ -21,3 +21,15 @@ hamburger.addEventListener("click", toggleMenu);
 menuItems.forEach(function (menuItem) {
   menuItem.addEventListener("click", toggleMenu);
 });
+
+var $cards = $(".cards").isotope({
+  itemSelector: ".card",
+  layoutMode: "fitRows",
+});
+// filter functions
+
+// bind filter button click
+$(".options").on("click", "span", function () {
+  var filterValue = $(this).attr("data-filter");
+  $cards.isotope({ filter: filterValue });
+});

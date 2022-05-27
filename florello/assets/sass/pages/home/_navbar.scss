@@ -5,17 +5,17 @@
 }
 
 nav {
-  padding: 0px 15.75%;
+  background-color: rgb(114, 73, 73);
   @media screen and (max-width: 1200px) {
-    padding: 0px 57.3%;
   }
 
   .navbar {
+    position: sticky;
+    z-index: 1;
     @media screen and (max-width: 1025px) {
       display: none;
     }
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 100%;
     .logo {
@@ -37,18 +37,12 @@ nav {
 
       li {
         padding-left: 58px;
+        line-height: 115px;
         @media screen and (max-width: 1400px) {
           margin-left: -8px;
         }
         a {
-          color: rgb(27, 27, 27);
-          text-decoration: none;
-          font-family: "Montserrat", sans-serif;
-          font-size: 12px;
-          font-weight: 500;
-          height: 22px;
-          letter-spacing: 1.2px;
-          line-height: 115px;
+          @include text;
           span {
             line-height: 22px;
           }
@@ -95,6 +89,7 @@ nav {
             margin: 19px 0px;
             line-height: 19px;
             opacity: 1;
+            text-transform: none;
             span {
               letter-spacing: 0.1px;
             }

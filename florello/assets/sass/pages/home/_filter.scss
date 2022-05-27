@@ -10,29 +10,41 @@
       li {
         padding-left: 32px;
         a {
-          color: rgb(27, 27, 27);
-          text-decoration: none;
-          font-family: "Montserrat", sans-serif;
-          font-size: 12px;
-          font-weight: 500;
-          height: 22px;
-          letter-spacing: 1.2px;
-          text-transform: uppercase;
+          @include text;
         }
       }
     }
-
+    .options {
+      li {
+        span {
+          @include text;
+          cursor: pointer;
+        }
+      }
+    }
     .cards {
       position: relative;
-      top: 200px;
+      top: 104px;
       .card {
         position: relative;
-        height: 400px;
-        min-width: 100px;
+        height: 444.6px;
+        min-width: 267px;
         width: 295px;
         overflow: hidden;
+        text-align: center;
+        margin-right: 20px;
         img {
           width: 100%;
+        }
+        h2 {
+          @include text;
+        }
+        a {
+          @include text;
+        }
+        span {
+          @include text;
+          color: $text-color-second;
         }
       }
     }

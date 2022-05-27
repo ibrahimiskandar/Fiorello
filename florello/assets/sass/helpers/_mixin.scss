@@ -1,0 +1,10 @@
+@mixin text {
+  color: $text-color-main;
+  text-decoration: none;
+  font-family: $font-main;
+  font-weight: 500;
+  font-size: 12px;
+  height: 22px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
